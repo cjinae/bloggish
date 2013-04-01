@@ -9,25 +9,30 @@
 
 </head>
 <body id = "body">
-	<div class ="topper">
+	<div class ="header">
+		<div class = "title">
+			<h3> meblog</h3>
+		</div>
+		<div class = "nav">
 		<ul>
-			<li>Insert Blog Title Here</li>
 			<li>Blog Posts</li>
 			<li>Portfolio</li>
 			<li>Resume</li>
+			<li class = "nav-contact">
+				<div class = "circle"><p>Let's Chat!</p></div>
+			</li>
 		</ul>
+		</div>
 	</div>
+
 	<div class = "outer-container">
 		<div class ="outer-wrapper">	
-<!-- 			<div class = "left-content">
-				<ul>
-					<li class="active"><%=link_to "Home", posts_path %></li>
-					<li><%=link_to "New", new_post_path%></li>
-				</ul>
-			</div> -->
-			<div class = "main-content">
+			<div class = "inner-wrapper">
+				<h1>LET ME TELL YOU A SECRET</h1>
+			</div>
+			<div class = "main-wrapper">
 				<div class = "content-box">	
-					blah blah blah this is my blog post
+					
 					<div class = "content-image">
 						<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
 					</div>
@@ -36,33 +41,21 @@
 						<p>This is a description of what my blog post would be about. This is a description of what my blog post would be about. This is a description of what my blog post would be about.</p>
 						<%= link_to "Read More", post_path(@posts) %>
 					</div>
-
 				</div>
 
 				<div class = "content-box">	
-					blah blah blah this is my blog post
+					
 					<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
 				</div>
 
 				<div class = "content-box">	
-					blah blah blah this is my blog post
+					
 					<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
 				</div>
-
-				<%#= yield %>	
-				
+					<%#= yield %>	
 			</div>
-		
-<!-- 		<div class = "right-content">
-			<ul>
-				<li>blah</li>
-				<li>blah</li>
-				<li>blah</li>
-			</ul>
-		</div> -->
-		
 		</div>
-
 	</div>
+
 </body>
 </html>
