@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#body {
+	background-color: #FFF;
+	/*background: url('/assets/pw_maze_white.png');*/
+}
+
+.topper {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+.topper ul {
+	list-style: none;
+	display: inline-block;
+}
+
+.topper ul li {
+	display: inline;
+}
+
+.outer-container {
+	width: 1074px;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+.outer-wrapper {
+	width: 100%;
+}
+/*
+.left-content {
+	margin-top: 20px;
+	float: left;
+	width: 50px;
+}*/
+
+.main-content {
+	margin-top: 20px;
+	padding: 45px, 34px;
+/*	width: 1020px;*/
+	background-color: #4ca8a1;
+/*	background-image: -ms-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -moz-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -o-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E7F3EF), color-stop(5, #73726D));
+	background-image: -webkit-linear-gradient(top, #E7F3EF 0%, #73726D 500%);
+	background-image: linear-gradient(to bottom, #E7F3EF 0%, #73726D 500%);*/
+	border-radius: 5px;
+	border: blue solid 2px;
+}
+
+.content-box {
+/*	overflow: hidden;*/
+	width: 300px;
+	height: 475px;
+	float: left;
+	padding-left: 20px;
+	border: black 1px solid;
+	position: relative;
+}
+
+/*.right-content {
+	margin-top: 20px;
+	float: right;
+	width: 50px;
+}*/
+
+.content-text h3 {
+	vertical-align: baseline;
+	font-size: 100%;
+	font-family: helvetica;
+	color: #aa2058;
+}
+
+.content-text p {
+	color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+

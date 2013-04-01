@@ -1,0 +1,15 @@
+<div class = "blog-post">
+	<% @posts.each do |f| %>
+		<p class = "title"><%=f.title%> </p>
+		<p class = "name"><%=f.name%> </p>
+		<p class = "content"><%=f.content%> </p>
+		
+		<%= link_to "Read More", post_path(f) %>
+		<%=link_to "| Destroy Post", f,      
+				:confirm => "Are you sure?",
+				:method => :delete%>
+	<% end %>
+</div>
+
+
+

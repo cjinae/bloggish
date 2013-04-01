@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body id = "body">
+	<div class ="topper">
+		<ul>
+			<li>Insert Blog Title Here</li>
+			<li>Blog Posts</li>
+			<li>Portfolio</li>
+			<li>Resume</li>
+		</ul>
+	</div>
+	<div class = "outer-container">
+		<div class ="outer-wrapper">	
+<!-- 			<div class = "left-content">
+				<ul>
+					<li class="active"><%=link_to "Home", posts_path %></li>
+					<li><%=link_to "New", new_post_path%></li>
+				</ul>
+			</div> -->
+			<div class = "main-content">
+				<div class = "content-box">	
+					blah blah blah this is my blog post
+					<div class = "content-image">
+						<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
+					</div>
+					<div class = "content-text">
+						<h3>THIS IS THE BOX TITLE</h3>
+						<p>This is a description of what my blog post would be about. This is a description of what my blog post would be about. This is a description of what my blog post would be about.</p>
+						<%= link_to "Read More", post_path(@posts) %>
+					</div>
+
+				</div>
+
+				<div class = "content-box">	
+					blah blah blah this is my blog post
+					<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
+				</div>
+
+				<div class = "content-box">	
+					blah blah blah this is my blog post
+					<img src = "http://viximo.com/sites/default/files/viximo-mobile2.png">
+				</div>
+
+				<%#= yield %>	
+				
+			</div>
+		
+<!-- 		<div class = "right-content">
+			<ul>
+				<li>blah</li>
+				<li>blah</li>
+				<li>blah</li>
+			</ul>
+		</div> -->
+		
+		</div>
+
+	</div>
+</body>
+</html>

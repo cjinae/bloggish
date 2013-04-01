@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<b>Name:</b>
+	<%= @post.name %>
+</p>
+
+<p>
+	<b>Title:</b>
+	<%= @post.title %>
+</p>
+
+<p>
+	<b>Content:</b>
+	<%= @post.content %>
+</p>
+
+<p>
+	<b>Tags:</b>
+	<%= join_tags(@post) %>
+</p>
+
+<p>Comments</p>
+<%= render @post.comments %>   
+
+<p>Add a Comment</p>
+<%= render "comments/form" %>
+
+<%= button_to "Edit", edit_post_path(@post), :method => :get %>
