@@ -15,16 +15,21 @@
 #body {
 	background-color: #FFF;
 	/*background: url('/assets/pw_maze_white.png');*/
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-size: 14px;
 }
 
 .header {
 	width: 100%;
-	height: 80px;
+	height: 70px;
 	padding-top: 40px;
-	background-color: #FFF
+	background-color: #FFF;
 }
 
-.title {
+.blogname {
 	display: inline-block;
 	margin-left: 250px;
 }
@@ -59,14 +64,14 @@
 	color: #fff;
 	display: inline-block;
 	margin-left: 130px;
-	/*position: ;*/
 }
 
 .outer-container {
 	width: 100%;
 	padding: 0px;
 	margin: 0 auto;
-	background-color: #4ca8a1;
+	background-color: #54c2c2;
+	/*#4ca8a1;*/
 }
 
 .outer-wrapper {
@@ -78,10 +83,22 @@
 	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px black solid;
 	padding-left: 10px;
+	padding-top: 30px;
 }
 
+.primary {
+	color: #FFF;
+}
+
+.secondary {
+	font-size: 20px;
+	color: #fbfbfb;
+}
+
+.tertiary {
+	font-size: 16px;
+}
 
 .main-wrapper {
 	width: 1024px;
@@ -97,7 +114,6 @@
 	height: 475px;
 	float: left;
 	padding-left: 20px;
-/*	border: black 1px solid;*/
 	position: relative;
 }
 
@@ -110,6 +126,29 @@
 
 .content-text p {
 	color: #444;
+}
+
+/* style for posts page */
+
+.blog-outer-container {
+	width: 100%;
+	height: 1000px;
+	padding: 0px;
+	background-color: #54c2c2;
+	z-index: -1;
+}
+
+.blog-outer-wrapper {
+	padding-top: 15px;
+}
+
+.blog-post {
+	/*margin-top: 50px;*/
+	width: 700px;
+	margin: 0px auto;
+	background-color: #fbfbfb;
+	border-radius: 4px;
+	padding: 20px;
 }
 
 

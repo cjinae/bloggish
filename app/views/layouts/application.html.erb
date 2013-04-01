@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Blog</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -9,12 +10,12 @@
 </head>
 <body id = "body">
 	<div class ="header">
-		<div class = "title">
-			<h3> meblog</h3>
+		<div class = "blogname">
+			<h3> <%= link_to "meblog", '/', {:style => 'text-decoration: none'} %> </h3>
 		</div>
 		<div class = "nav">
 		<ul>
-			<li>Blog Posts</li>
+			<li><%= link_to "Blog Posts", posts_path, {:style => 'text-decoration: none'} %></li>
 			<li>Portfolio</li>
 			<li>Resume</li>
 			<li class = "nav-contact">
@@ -23,7 +24,8 @@
 		</ul>
 		</div>
 	</div>
-<%= yield %>	
+
+	<%= yield %>	
 
 
 </body>
